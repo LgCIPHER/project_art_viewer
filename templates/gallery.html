@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Pic Collection</title>
+{% endblock %}
+
+{% block main %}
+<article class="content">
+    <h2>Gallery</h2>
+
+    <h3>Genshin Wallpaper</h3>
+
+    <a href="/gallery/update">Update</a>
+
+    {% if pics|length < 1 %} <p>There are no pics. Click the update button above</p>
+        {% else %}
+        <br />
+
+        <a href="/gallery/check_deleted">Check</a>
+
+        <br />
+
+        {% for pic in pics %}
+        <img src="{{ pic.content }}" alt="{{ pic.content }}" title="{{ pic.content }}" loading="lazy">
+        {% endfor %}
+        {% endif %}
+</article>
+{% endblock %}

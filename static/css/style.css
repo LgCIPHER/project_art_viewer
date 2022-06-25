@@ -1,0 +1,98 @@
+* {
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+/* for header */
+header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+}
+
+.primary-navigation {
+    list-style: none;
+}
+
+/* Sizing Links */
+
+.nav-link {
+    display: inline-block;
+    width: 90px;
+    height: 55px;
+
+    /* centering text */
+    text-align: center;
+    /* horizontally */
+    line-height: 55px;
+    /* vertically */
+}
+
+q {
+    display: block;
+    align-self: center;
+}
+
+/* for body */
+body {
+    background-color: #333;
+    color: whitesmoke;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 1rem;
+    /* border-left: 1px solid yellow; */
+    /* border-right: 1px solid yellow; */
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+h2,
+q,
+p {
+    text-align: center;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+a {
+    color: aqua;
+    text-decoration: none;
+}
+
+/* a:visited {
+    color: lightgray;
+} */
+
+a:hover,
+a:active {
+    color: #eee;
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+table,
+tr,
+th,
+td,
+caption {
+    border: 1px solid #eee;
+    /* font-family: 'Courier New', Courier, monospace; */
+    border-collapse: collapse;
+    padding: 0.5rem;
+}

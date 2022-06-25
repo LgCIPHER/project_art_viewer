@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Pic Collection</title>
+{% endblock %}
+
+{% block main %}
+<article class="content">
+    <h2>Update Pic URL</h2>
+
+    <form action="/update/{{pic.id}}" method="POST">
+        <input type="text" name="content" id="content" value="{{pic.content}}">
+        <input type="submit" value="Add Pic">
+    </form>
+</article>
+{% endblock %}
